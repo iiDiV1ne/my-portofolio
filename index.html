@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portofolio — [Rafka Herfiza]</title>
+  <meta name="description" content="Portofolio pribadi [Rafka Herfiza .H] — developer / designer / kreator" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#7c3aed;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#071428 0%, #081226 100%);color:#e6eef8}
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:800;color:white}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px;align-items:center}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:18px;box-shadow:0 6px 20px rgba(2,6,23,0.6);}
+    h1{margin:0;font-size:34px}
+    p.lead{color:var(--muted);margin:12px 0 18px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:999px;color:var(--muted);font-weight:600}
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:16px}
+    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+    .project h3{margin:0 0 8px}
+    footer{margin-top:36px;color:var(--muted);text-align:center;font-size:13px}
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .projects{grid-template-columns:1fr}
+      nav{display:none}
+    }
+    /* Contact form */
+    form label{display:block;font-size:13px;margin-top:10px;color:var(--muted)}
+    input,textarea{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    textarea{min-height:110px}
+    .meta{font-size:13px;color:var(--muted);margin-top:8px}
+    .projects .tag{display:inline-block;margin-top:8px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.02);font-weight:600;color:var(--muted);font-size:13px}
+    .social{display:flex;gap:10px;margin-top:10px}
+    .social a{color:var(--muted);text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">RH</div>
+        <div>
+          <div style="font-weight:700">[Rafka Herfiza]</div>
+          <div style="font-size:13px;color:var(--muted)">Developer • Designer • Pembuat Hal Keren</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Hallo — saya [Rafka Herfiza]</h1>
+        <p class="lead">Saya membuat website, UI, dan pengalaman digital sederhana tapi berfungsi. Saya suka React, HTML/CSS, dan desain pixel-perfect.</p>
+        <div class="skills" id="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+        </div>
+
+        <div style="margin-top:16px">
+          <a class="btn" href="#projects">Lihat Project</a>
+          <a class="btn" href="#contact" style="background:transparent;border:1px solid rgba(255,255,255,0.06);margin-left:10px;color:var(--muted)">Hubungi</a>
+        </div>
+
+        <div class="meta">Unduh CV — <a href="#" style="color:var(--accent);text-decoration:none">CV.pdf</a></div>
+      </div>
+
+      <aside style="width:100%">
+        <div class="card" style="text-align:center">
+          <img src="https://placehold.co/240x240/png?text=Foto" alt="Foto" style="width:240px;height:240px;border-radius:12px;object-fit:cover;display:block;margin:0 auto 12px">
+          <div style="font-weight:700">[Rafka Herfiza]</div>
+          <div class="meta">Fullstack Developer • Indonesia</div>
+          <div class="social">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects" style="margin-top:24px">
+      <h2 style="margin:0 0 12px">Projects</h2>
+      <div class="projects">
+        <div class="project card">
+          <h3>Project A</h3>
+          <p class="meta">Website e-commerce kecil — React, Tailwind, Firebase</p>
+          <div class="tag">Frontend</div>
+        </div>
+        <div class="project card">
+          <h3>Project B</h3>
+          <p class="meta">Landing page untuk brand — HTML &amp; CSS</p>
+          <div class="tag">UI/UX</div>
+        </div>
+        <div class="project card">
+          <h3>Project C</h3>
+          <p class="meta">Portfolio template ini — HTML/CSS</p>
+          <div class="tag">Template</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:24px">
+      <h2>About</h2>
+      <div class="card" style="margin-top:12px">
+        <p style="margin:0;color:var(--muted)">Saya [Rafka Herfiza], membuat project digital, fokus pada front-end dan pengalaman pengguna. Saya suka membuat antarmuka yang sederhana, cepat, dan mudah dipelihara.</p>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:24px">
+      <h2>Contact</h2>
+      <div class="card" style="margin-top:12px">
+        <form onsubmit="submitForm(event)">
+          <label for="name">Nama</label>
+          <input id="name" placeholder="Nama kamu" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="email@contoh.com" required>
+          <label for="message">Pesan</label>
+          <textarea id="message" placeholder="Tulis pesannya..." required></textarea>
+          <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+            <button class="btn" type="submit">Kirim</button>
+            <a href="mailto:email@contoh.com" class="meta" style="text-decoration:none;color:var(--muted)">Atau kirim lewat email</a>
+          </div>
+        </form>
+        <script>
+          function submitForm(e){
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const mailto = `mailto:email@contoh.com?subject=${encodeURIComponent('Pesan dari '+name)}&body=${encodeURIComponent(message+'\n\n'+email)}`;
+            location.href = mailto;
+          }
+        </script>
+      </div>
+    </section>
+
+    <footer>
+      Dibuat dengan ❤️ — Ganti konten dan foto, lalu deploy ke GitHub Pages atau Netlify.
+    </footer>
+  </div>
+</body>
+</html>
